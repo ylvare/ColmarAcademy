@@ -186,6 +186,27 @@ nav ul li{
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+
+  .horizontal .small > .image-part{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .horizontal .small > .text-part{
+    margin: 1rem 1rem 4rem 1rem;
+  }
+
+  .horizontal .small > .image-part img{
+    min-width: 100%;
+  }
+
+  .large > .text-part{
+    padding: 1rem 1rem 0rem 1rem;
+  }
+
+}
 /*section three*/
 
 .courses{
@@ -200,6 +221,29 @@ nav ul li{
   width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+
+   h2{
+    margin: 0;
+  }
+ .courses.desctop{
+   display: none;
+ }
+
+ .courses.mobile{
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+ }
+
+ .courses.mobile span{
+   background-color: lightgrey;
+   padding: 1rem 0 2rem 1rem;
+   margin-bottom: 0.5rem;
+}
+}
 
 /*section four*/
 
