@@ -7,6 +7,9 @@ body {
 
 /* general styles*/
 
+div {
+  border: 1px solid black;
+}
 
 h2 {
   margin: 2rem auto;
@@ -68,10 +71,19 @@ video, .image-part img {
   margin-top: 1rem;
 }
 
+.desctop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 /*header*/
 header {
   display: flex;
-  padding: auto 1.5rem;
+  /*padding: auto 1.5rem;*/
+  margin: auto 1.5rem;
   min-height: 2rem;
   align-items: center;
 }
@@ -91,6 +103,29 @@ nav ul{
 nav ul li{
   margin: 0.5rem;
   list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .desctop {
+    display:none;
+  }
+
+  .logo {
+    width: 25%;
+    flex-grow: 0;
+  }
+
+  .mobile {
+    display: block;
+    flex-grow: 1;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
 }
 
 /*section one*/
