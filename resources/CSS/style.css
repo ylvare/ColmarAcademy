@@ -7,10 +7,6 @@ body {
 
 /* general styles*/
 
-div {
-  border: 1px solid black;
-}
-
 h2 {
   margin: 2rem auto;
 }
@@ -75,15 +71,14 @@ video, .image-part img {
   display: block;
 }
 
-.mobile {
+.mobile, .courses.mobile{
   display: none;
 }
 
 /*header*/
 header {
   display: flex;
-  /*padding: auto 1.5rem;*/
-  margin: auto 1.5rem;
+  padding: auto 1.5rem;
   min-height: 2rem;
   align-items: center;
 }
@@ -111,17 +106,11 @@ nav ul li{
     display:none;
   }
 
-  .logo {
-    width: 25%;
-    flex-grow: 0;
-  }
-
   .mobile {
     display: block;
-    flex-grow: 1;
   }
 
-  nav {
+  .logo {
     height: 4rem;
     display: flex;
     justify-content: space-between;
@@ -175,6 +164,10 @@ nav ul li{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  #section-one .more-info {
+    margin-bottom: 2rem;
+  }
 }
 
 /*section two*/
@@ -223,26 +216,25 @@ nav ul li{
 
 @media only screen and (max-width: 800px) {
 
-   h2{
+  h2{
     margin: 0;
   }
- .courses.desctop{
+  .courses.desctop{
    display: none;
- }
+  }
 
- .courses.mobile{
-   padding-top: 1rem;
-   padding-bottom: 2rem;
+  .courses.mobile{
+   padding: 1rem 1.5rem 2rem 1.5rem;
    display: flex;
    flex-direction: column;
    margin: 0;
- }
+  }
 
- .courses.mobile span{
+  .courses.mobile span{
    background-color: lightgrey;
    padding: 1rem 0 2rem 1rem;
    margin-bottom: 0.5rem;
-}
+  }
 }
 
 /*section four*/
@@ -254,6 +246,19 @@ nav ul li{
 
 #section-four  video{
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .desctop.text-part{
+  display: none;
+  }
+
+  video {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  }
+
 }
 
 /*footer */
@@ -269,4 +274,10 @@ footer {
 
 footer span {
   margin: 0 0.25rem;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    text-align: center;
+  }
 }
